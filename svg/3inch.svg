@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="65.151451mm"
+   height="65.151443mm"
+   viewBox="0 0 65.151451 65.151443"
+   version="1.1"
+   id="svg1"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:export-bgcolor="#ffffff00" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Слой 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-69.16163,-31.424275)">
+    <rect
+       style="opacity:1;fill:#0070a2;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1"
+       width="62.151447"
+       height="62.151443"
+       x="70.661629"
+       y="32.924274" />
+    <text
+       xml:space="preserve"
+       style="font-size:48.794px;opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:2.61082;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       x="86.444092"
+       y="78.078209"
+       id="text3"
+       transform="scale(0.94989188,1.0527514)"><tspan
+         sodipodi:role="line"
+         id="tspan3"
+         style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:2.61082;stroke-dasharray:none;stroke-opacity:1"
+         x="86.444092"
+         y="78.078209">3</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:28.695px;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.53538;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       x="113.53393"
+       y="64.207352"
+       id="text3-8"
+       transform="scale(0.99676539,1.0032451)"><tspan
+         sodipodi:role="line"
+         id="tspan3-5"
+         style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.53538;stroke-dasharray:none;stroke-opacity:1"
+         x="113.53393"
+         y="64.207352">&quot;</tspan></text>
+  </g>
+</svg>
