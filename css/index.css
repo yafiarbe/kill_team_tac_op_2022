@@ -111,8 +111,22 @@ body {
   background: gray;
   font-size: 12px;
   font-family: Roboto;
-  line-height: 1.2;
+  line-height: 1.4;
   font-weight: 400;
+}
+
+i {
+  font-style: italic;
+}
+
+b {
+  font-weight: bold;
+}
+
+a {
+  color: #225474;
+  font-weight: 500;
+  text-decoration: none;
 }
 
 .wrapper {
@@ -242,15 +256,14 @@ img {
 }
 .hide {
   display: none;
-}/*# sourceMappingURL=index.css.map */
-
-
-@media (max-width : 520px){
-    .page-a4 {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-column-gap: 20px;
-        grid-row-gap: 20px;
-        padding: 20px;
-    }
 }
+
+@media (max-width: 520px) {
+  .page-a4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    padding: 20px;
+  }
+}/*# sourceMappingURL=index.css.map */

@@ -5,7 +5,8 @@ let countCards = 0;
 var data;
 
 // используем fetch для получения JSON-данных с API
-fetch("https://65a587e452f07a8b4a3f4c7a.mockapi.io/CRITICAL_OPERATIONS_2022")
+const baseCritOpsUrl = "https://65a587e452f07a8b4a3f4c7a.mockapi.io/CRITICAL_OPERATIONS_2022"
+fetch(baseCritOpsUrl)
     .then((response) => response.json()) // извлекаем данные из тела ответа
     .then((json) => {
         data = json; // присваиваем данные переменной
@@ -53,7 +54,7 @@ fetch("https://65a587e452f07a8b4a3f4c7a.mockapi.io/CRITICAL_OPERATIONS_2022")
                                 // Прописывается описание операции
                                 let varCardDescription = document.createElement("p");
                                 varCardDescription.className = "card__description";
-                                varCardDescription.textContent = tacOp.DESCRIPTION;
+                                varCardDescription.innerHTML = tacOp.DESCRIPTION;
                                 varCard.append(varCardDescription);
 
                                 // Создаётся список условий
@@ -64,13 +65,13 @@ fetch("https://65a587e452f07a8b4a3f4c7a.mockapi.io/CRITICAL_OPERATIONS_2022")
                                 // Прописывается первое условие
                                 let varCardConditionFirst = document.createElement("li");
                                 varCardConditionFirst.className = "card__condition-first";
-                                varCardConditionFirst.textContent = tacOp.CONDITIONS.CONDITION_FIRST;
+                                varCardConditionFirst.innerHTML = tacOp.CONDITIONS.CONDITION_FIRST;
                                 varCard.querySelector(".card__conditions").append(varCardConditionFirst);
 
                                 // Прописывается второе условие 
                                 let varCardConditionSecond = document.createElement("li");
                                 varCardConditionSecond.className = "card__condition-second";
-                                varCardConditionSecond.textContent = tacOp.CONDITIONS.CONDITION_SECOND;
+                                varCardConditionSecond.innerHTML = tacOp.CONDITIONS.CONDITION_SECOND;
                                 varCard.querySelector(".card__conditions").append(varCardConditionSecond);
 
                                 // Работа с активными действиями
@@ -79,7 +80,7 @@ fetch("https://65a587e452f07a8b4a3f4c7a.mockapi.io/CRITICAL_OPERATIONS_2022")
                                     // 
                                     let varCardActionRule = document.createElement("p");
                                     varCardActionRule.className = "card__action-rule";
-                                    varCardActionRule.textContent = tacOp.ACTION.ACTION_RULE;
+                                    varCardActionRule.innerHTML = tacOp.ACTION.ACTION_RULE;
                                     varCard.append(varCardActionRule);
 
                                     // 
@@ -99,7 +100,7 @@ fetch("https://65a587e452f07a8b4a3f4c7a.mockapi.io/CRITICAL_OPERATIONS_2022")
 
                                     let varCardActionDescription = document.createElement("p");
                                     varCardActionDescription.className = "card__action-description";
-                                    varCardActionDescription.textContent = tacOp.ACTION.ACTION_DESCRIPTION;
+                                    varCardActionDescription.innerHTML = tacOp.ACTION.ACTION_DESCRIPTION;
                                     varCard.querySelector(".card__action").append(varCardActionDescription);
                                 }
 
@@ -117,6 +118,8 @@ fetch("https://65a587e452f07a8b4a3f4c7a.mockapi.io/CRITICAL_OPERATIONS_2022")
                                     varCard.append(varCardDesignersNote);
                                 }
 
+                                linksCreator(varCard, 'json/baseUrl.json')
+
                                 countCards++;
                                 console.log("Создана", countCards, "карточка");
                             }
@@ -128,6 +131,7 @@ fetch("https://65a587e452f07a8b4a3f4c7a.mockapi.io/CRITICAL_OPERATIONS_2022")
     })
     .then((tasks) => {
         addImage();
+        creatorURL(document.querySelectorAll('.card'))
     })
     .catch((error) => {
         console.error(error); // обрабатываем ошибки
@@ -169,3 +173,72 @@ function addImage() {
         }
     }
 }
+
+
+
+
+
+function creatorURL(el) {
+    // Получаем элемент с классом card
+    // Получаем все элементы с классом card
+    // Получаем все элементы с классом card
+    let cards = document.querySelectorAll(".card");
+
+    // Для каждого элемента с классом card
+    cards.forEach(card => {
+        // Получаем весь текст внутри card
+        let text = card.textContent;
+        // Ищем слова в скобках с помощью регулярного выражения
+        let regex = /\((.*?)\)/g;
+        let match = regex.exec(text);
+        // Пока есть совпадения
+        while (match) {
+            // Получаем слово без скобок
+            let word = match[1];
+            // Создаем элемент ссылки с атрибутом href, равным ./img/word
+            let link = document.createElement("a");
+            link.href = "./img/" + word;
+            link.textContent = word;
+            // Заменяем слово в скобках на ссылку с помощью метода replaceChild
+            // Используем метод evaluate для выбора элемента по тексту
+            let element = document.evaluate(`//*[text()="(${word})"]`, card, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+            if (element) {
+                card.replaceChild(link, element);
+            }
+            // Ищем следующее совпадение
+            match = regex.exec(text);
+        }
+    });
+
+
+
+
+}
+
+function linksCreator(el, json) {
+    var request = new XMLHttpRequest();
+    request.open('GET', json);
+    request.responseType = 'json';
+    request.send();
+    request.onload = function () {
+        var dataUrls = request.response;
+
+
+        const allLinkOnCard = el.querySelectorAll('a');
+        for (const link in allLinkOnCard) {
+            if (Object.hasOwnProperty.call(allLinkOnCard, link)) {
+                const element = allLinkOnCard[link];
+                console.log('@@@@@@@', element.textContent);
+
+
+                if (element.textContent in dataUrls) {
+                    let newUrl = dataUrls[element.textContent];
+                    element.href = newUrl;
+                }
+            }
+        }
+    };
+}
+
+
+

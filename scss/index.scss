@@ -5,8 +5,23 @@ body {
     background: gray;
     font-size: 12px;
     font-family: Roboto;
-    line-height: 1.2;
+    line-height: 1.4;
     font-weight: 400;
+}
+
+i {
+    font-style: italic;
+}
+
+b {
+    font-weight: bold;
+}
+
+a {
+    color: #225474;
+    font-weight: 500;
+    text-decoration: none;
+    // font-style: italic;
 }
 
 .wrapper {
@@ -143,10 +158,10 @@ body {
     }
 }
 
-img{
+img {
     width: 13px;
     height: 13px;
-    
+
     transform: translateY(25%);
 }
 
@@ -167,6 +182,16 @@ img{
     }
 }
 
-.hide{
+.hide {
     display: none;
+}
+
+@media (max-width: 520px) {
+    .page-a4 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        padding: 20px;
+    }
 }

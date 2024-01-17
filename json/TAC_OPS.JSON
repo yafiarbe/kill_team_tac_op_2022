@@ -1,0 +1,442 @@
+[
+	{
+		"BASE_TAC_OPS": {
+			"RECON": {
+				"SURGE_FORWARD": {
+					"GROUP": "RECON",
+					"NAME": "SURGE FORWARD",
+					"DESCRIPTION": "Вы можете раскрыть эту <b>Тактическую Операцию</b> (<a>Tac Op</a>) на этапе <b>Раскрытия Цели</b> (<a>Target Reveal</a>) любого <b>Поворотного момента</b> (<a>Turning Point</a>).",
+					"CONDITIONS": {
+						"CONDITION_FIRST": "В конце любого <b>Поворотного момента</b> (<a>Turning Point</a>), если общий APL дружественных оперативников в пределах --6-- от зоны высадки вашего противника равен 4 или более, вы получаете 1 VP.",
+						"CONDITION_SECOND": "Если вы достигнете первого условия в конце любых последующих <b>Поворотных моментах</b> (<a>Turning Point</a>), вы получите 1 VP."
+					},
+					"ACTION": {
+						"ACTION_AVAILABILITY": false,
+						"ACTION_RULE": "",
+						"ACTION_COST": null,
+						"ACTION_DESCRIPTION": ""
+					},
+					"ADDITIONAL_DESCRIPTION": "",
+					"DESIGNERS_NOTE": ""
+				},
+				"COURIER": {
+					"GROUP": "RECON",
+					"NAME": "COURIER",
+					"DESCRIPTION": "Вы можете раскрыть эту <b>Тактическую Операцию</b> (<a>Tac Op</a>) на этапе <b>Раскрытия Цели</b> (<a>Target Reveal</a>) в любой <b>Поворотный момент</b> (<a>Turning Point</a>). Когда вы это сделаете, выберите одного дружественного оперативника.",
+					"CONDITIONS": {
+						"CONDITION_FIRST": "В конце любого <b>Поворотного момента</b> (<a>Turning Point</a>), если этот оперативник находится в пределах --6-- от <b>Зоны Высадки</b> (<a>Drop Zone</a>) вашего противника, вы получаете 1 VP.",
+						"CONDITION_SECOND": "Если вы достигнете первого условия в конце любых последующих <b>Поворотных моментах</b> (<a>Turning Point</a>), вы получите 1 VP."
+					},
+					"ACTION": {
+						"ACTION_AVAILABILITY": false,
+						"ACTION_RULE": "",
+						"ACTION_COST": null,
+						"ACTION_DESCRIPTION": ""
+					},
+					"ADDITIONAL_DESCRIPTION": "",
+					"DESIGNERS_NOTE": ""
+				},
+				"OUTFLANK": {
+					"GROUP": "RECON",
+					"NAME": "OUTFLANK",
+					"DESCRIPTION": "Вы можете раскрыть эту <b>Тактическую Операцию</b> (<a>Tac Op</a>) на этапе <b>Раскрытия Цели</b> (<a>Target Reveal</a>) любого <b>Поворотного момента</b> (<a>Turning Point</a>).",
+					"CONDITIONS": {
+						"CONDITION_FIRST": "В конце любого <b>Поворотного момента</b> (<a>Turning Point</a>), если дружественные оперативники контролируют оба нейтральных края зоны поражения, вы получаете 1 VP.",
+						"CONDITION_SECOND": "Если вы достигнете первого условия в конце любых последующих <b>Поворотных моментах</b> (<a>Turning Point</a>), вы получите 1 VP."
+					},
+					"ACTION": {
+						"ACTION_AVAILABILITY": false,
+						"ACTION_RULE": "",
+						"ACTION_COST": null,
+						"ACTION_DESCRIPTION": ""
+					},
+					"ADDITIONAL_DESCRIPTION": "Дружественные оперативники контролируют нейтральную границу зоны поражения, если общий APL дружественных оперативников в пределах --3-- от нее больше, чем у вражеских оперативников. Оперативники в пределах --6-- от своей зоны высадки не могут вносить свой APL при определении этой суммы.",
+					"DESIGNERS_NOTE": ""
+				},
+				"PLANT_TRANSPONDER": {
+					"GROUP": "RECON",
+					"NAME": "PLANT TRANSPONDER",
+					"DESCRIPTION": "Вы можете раскрыть эту <b>Тактическую Операцию</b> (<a>Tac Op</a>) на этапе <b>Раскрытия Цели</b> (<a>Target Reveal</a>) любого <b>Поворотного момента</b> (<a>Turning Point</a>) после первого.",
+					"CONDITIONS": {
+						"CONDITION_FIRST": "Если дружественный оперативник выполняет действие миссии «Plant Transponder», вы получаете 1 VP.",
+						"CONDITION_SECOND": "Если вы достигнете первого условия в любых последующих <b>Поворотных моментах</b> (<a>Turning Point</a>), вы получите 1 VP."
+					},
+					"ACTION": {
+						"ACTION_AVAILABILITY": true,
+						"ACTION_RULE": "Дружественные оперативники могут выполнять следующие действия миссии:",
+						"ACTION_NAME": "PLANT TRANSPONDER",
+						"ACTION_COST": 1,
+						"ACTION_DESCRIPTION": "Оперативник может выполнить это действие, находясь полностью на территории противника и на расстоянии более --2-- от элементов местности (баррикады — это элементы местности. Игнорируйте элементы местности, имеющие признак «Незначительность (Insignificant)». Если все условия соблюдены, поместите один из ваших жетонов транспондера под оперативника как можно ближе к центру его базы. Оперативник не может выполнить это действие, находясь в пределах <b>Зоны Поражения</b> (<a>Engagement Range</a>) вражеского оперативника или в --6-- от других ваших жетонов транспондера."
+					},
+					"ADDITIONAL_DESCRIPTION": "",
+					"DESIGNERS_NOTE": ""
+				},
+				"RECOVER_ITEM": {
+					"GROUP": "RECON",
+					"NAME": "RECOVER ITEM",
+					"DESCRIPTION": "Вы должны раскрыть эту <b>Тактическую Операцию</b> (<a>Tac Op</a>) на этапе <b>Раскрытия Цели</b> (<a>Target Reveal</a>) первого <b>Поворотного момента</b> (<a>Turning Point</a>). Поместите один из своих жетонов предметов на <b>Территорию Противника</b> (<a>Opponents Territory</a>). Действие <b>Подбор</b> (<a>Pick Up</a>) может быть выполнено дружественными оперативниками (но не вражескими оперативниками) с вашим жетоном предмета.",
+					"CONDITIONS": {
+						"CONDITION_FIRST": "Если в конце любого <b>Поворотного момента</b> (<a>Turning Point</a>) дружественный оперативник контролирует ваш жетон предмета, вы получаете 1 VP.",
+						"CONDITION_SECOND": "Если вы достигнете первого условия в конце любых последующих <b>Поворотных моментах</b> (<a>Turning Point</a>), вы получите 1 VP."
+					},
+					"ACTION": {
+						"ACTION_AVAILABILITY": false,
+						"ACTION_RULE": "",
+						"ACTION_COST": null,
+						"ACTION_DESCRIPTION": ""
+					},
+					"ADDITIONAL_DESCRIPTION": "",
+					"DESIGNERS_NOTE": ""
+				},
+				"SECURE_VANTAGE": {
+					"GROUP": "RECON",
+					"NAME": "SECURE VANTAGE",
+					"DESCRIPTION": "Вы можете раскрыть эту <b>Тактическую Операцию</b> (<a>Tac Op</a>) на этапе <b>Раскрытия Цели</b> (<a>Target Reveal</a>) любого <b>Поворотного момента</b> (<a>Turning Point</a>) после первого.",
+					"CONDITIONS": {
+						"CONDITION_FIRST": "В конце любого <b>Поворотного момента</b> (<a>Turning Point</a>), если вы контролируете <b>Точку обзора</b> (<a>Vantage Point</a>), которая находится более чем в 3 дюймах от вашей <b>Зоны Высадки</b> (<a>Drop Zone</a>), вы получаете 1 VP.",
+						"CONDITION_SECOND": "Если вы достигнете первого условия с другой 'Точкай обзора (Vantage Point)' в конце любого последующего <b>Поворотного момента</b> (<a>Turning Point</a>), вы получите 1 VP."
+					},
+					"ACTION": {
+						"ACTION_AVAILABILITY": false,
+						"ACTION_RULE": "",
+						"ACTION_COST": null,
+						"ACTION_DESCRIPTION": ""
+					},
+					"ADDITIONAL_DESCRIPTION": "Дружественные оперативники контролируют <b>Точку обзора</b> (<a>Vantage Point</a>), если общий APL дружественных оперативников на ней больше, чем у вражеских оперативников.",
+					"DESIGNERS_NOTE": ""
+				}
+			},
+			"INFILTRATION": {
+				"GATHER_SURVEILLANCE": {
+					"GROUP": "",
+					"NAME": "",
+					"DESCRIPTION": "",
+					"CONDITIONS": {
+						"CONDITION_FIRST": "",
+						"CONDITION_SECOND": ""
+					},
+					"ACTION": {
+						"ACTION_AVAILABILITY": false,
+						"ACTION_RULE": "",
+						"ACTION_NAME": "",
+						"ACTION_COST": null,
+						"ACTION_DESCRIPTION": ""
+					},
+					"ADDITIONAL_DESCRIPTION": "",
+					"DESIGNERS_NOTE": ""
+				},
+				"SEIZE_DEFENCES": {
+					"GROUP": "",
+					"NAME": "",
+					"DESCRIPTION": "",
+					"CONDITIONS": {
+						"CONDITION_FIRST": "",
+						"CONDITION_SECOND": ""
+					},
+					"ACTION": {
+						"ACTION_AVAILABILITY": false,
+						"ACTION_RULE": "",
+						"ACTION_NAME": "",
+						"ACTION_COST": null,
+						"ACTION_DESCRIPTION": ""
+					},
+					"ADDITIONAL_DESCRIPTION": "",
+					"DESIGNERS_NOTE": ""
+				},
+				"STALK_TARGET": {
+					"GROUP": "",
+					"NAME": "",
+					"DESCRIPTION": "",
+					"CONDITIONS": {
+						"CONDITION_FIRST": "",
+						"CONDITION_SECOND": ""
+					},
+					"ACTION": {
+						"ACTION_AVAILABILITY": false,
+						"ACTION_RULE": "",
+						"ACTION_NAME": "",
+						"ACTION_COST": null,
+						"ACTION_DESCRIPTION": ""
+					},
+					"ADDITIONAL_DESCRIPTION": "",
+					"DESIGNERS_NOTE": ""
+				},
+				"INSTALL_DEVICE": {
+					"GROUP": "",
+					"NAME": "",
+					"DESCRIPTION": "",
+					"CONDITIONS": {
+						"CONDITION_FIRST": "",
+						"CONDITION_SECOND": ""
+					},
+					"ACTION": {
+						"ACTION_AVAILABILITY": false,
+						"ACTION_RULE": "",
+						"ACTION_NAME": "",
+						"ACTION_COST": null,
+						"ACTION_DESCRIPTION": ""
+					},
+					"ADDITIONAL_DESCRIPTION": "",
+					"DESIGNERS_NOTE": ""
+				},
+				"SUBVERSIVE_CONTROL": {
+					"GROUP": "",
+					"NAME": "",
+					"DESCRIPTION": "",
+					"CONDITIONS": {
+						"CONDITION_FIRST": "",
+						"CONDITION_SECOND": ""
+					},
+					"ACTION": {
+						"ACTION_AVAILABILITY": false,
+						"ACTION_RULE": "",
+						"ACTION_NAME": "",
+						"ACTION_COST": null,
+						"ACTION_DESCRIPTION": ""
+					},
+					"ADDITIONAL_DESCRIPTION": "",
+					"DESIGNERS_NOTE": ""
+				},
+				"IMPLANT": {
+					"GROUP": "",
+					"NAME": "",
+					"DESCRIPTION": "",
+					"CONDITIONS": {
+						"CONDITION_FIRST": "",
+						"CONDITION_SECOND": ""
+					},
+					"ACTION": {
+						"ACTION_AVAILABILITY": false,
+						"ACTION_RULE": "",
+						"ACTION_NAME": "",
+						"ACTION_COST": null,
+						"ACTION_DESCRIPTION": ""
+					},
+					"ADDITIONAL_DESCRIPTION": "",
+					"DESIGNERS_NOTE": ""
+				}
+			},
+			"SECURITY": {
+				"SEIZE_GROUND": {
+					"GROUP": "",
+					"NAME": "",
+					"DESCRIPTION": "",
+					"CONDITIONS": {
+						"CONDITION_FIRST": "",
+						"CONDITION_SECOND": ""
+					},
+					"ACTION": {
+						"ACTION_AVAILABILITY": false,
+						"ACTION_RULE": "",
+						"ACTION_NAME": "",
+						"ACTION_COST": null,
+						"ACTION_DESCRIPTION": ""
+					},
+					"ADDITIONAL_DESCRIPTION": "",
+					"DESIGNERS_NOTE": ""
+				},
+				"HOLD THEM BACK": {
+					"GROUP": "",
+					"NAME": "",
+					"DESCRIPTION": "",
+					"CONDITIONS": {
+						"CONDITION_FIRST": "",
+						"CONDITION_SECOND": ""
+					},
+					"ACTION": {
+						"ACTION_AVAILABILITY": false,
+						"ACTION_RULE": "",
+						"ACTION_NAME": "",
+						"ACTION_COST": null,
+						"ACTION_DESCRIPTION": ""
+					},
+					"ADDITIONAL_DESCRIPTION": "",
+					"DESIGNERS_NOTE": ""
+				},
+				"CENTRAL CONTROL": {
+					"GROUP": "",
+					"NAME": "",
+					"DESCRIPTION": "",
+					"CONDITIONS": {
+						"CONDITION_FIRST": "",
+						"CONDITION_SECOND": ""
+					},
+					"ACTION": {
+						"ACTION_AVAILABILITY": false,
+						"ACTION_RULE": "",
+						"ACTION_NAME": "",
+						"ACTION_COST": null,
+						"ACTION_DESCRIPTION": ""
+					},
+					"ADDITIONAL_DESCRIPTION": "",
+					"DESIGNERS_NOTE": ""
+				},
+				"PROTECT ASSETS": {
+					"GROUP": "",
+					"NAME": "",
+					"DESCRIPTION": "",
+					"CONDITIONS": {
+						"CONDITION_FIRST": "",
+						"CONDITION_SECOND": ""
+					},
+					"ACTION": {
+						"ACTION_AVAILABILITY": false,
+						"ACTION_RULE": "",
+						"ACTION_NAME": "",
+						"ACTION_COST": null,
+						"ACTION_DESCRIPTION": ""
+					},
+					"ADDITIONAL_DESCRIPTION": "",
+					"DESIGNERS_NOTE": ""
+				},
+				"SECURE CENTRE LINE": {
+					"GROUP": "",
+					"NAME": "",
+					"DESCRIPTION": "",
+					"CONDITIONS": {
+						"CONDITION_FIRST": "",
+						"CONDITION_SECOND": ""
+					},
+					"ACTION": {
+						"ACTION_AVAILABILITY": false,
+						"ACTION_RULE": "",
+						"ACTION_NAME": "",
+						"ACTION_COST": null,
+						"ACTION_DESCRIPTION": ""
+					},
+					"ADDITIONAL_DESCRIPTION": "",
+					"DESIGNERS_NOTE": ""
+				},
+				"ESCORT OPERATIVE": {
+					"GROUP": "",
+					"NAME": "",
+					"DESCRIPTION": "",
+					"CONDITIONS": {
+						"CONDITION_FIRST": "",
+						"CONDITION_SECOND": ""
+					},
+					"ACTION": {
+						"ACTION_AVAILABILITY": false,
+						"ACTION_RULE": "",
+						"ACTION_NAME": "",
+						"ACTION_COST": null,
+						"ACTION_DESCRIPTION": ""
+					},
+					"ADDITIONAL_DESCRIPTION": "",
+					"DESIGNERS_NOTE": ""
+				}
+			},
+			"SEEK_AND_DESTROY": {
+				"EXECUTIONER": {
+					"GROUP": "",
+					"NAME": "",
+					"DESCRIPTION": "",
+					"CONDITIONS": {
+						"CONDITION_FIRST": "",
+						"CONDITION_SECOND": ""
+					},
+					"ACTION": {
+						"ACTION_AVAILABILITY": false,
+						"ACTION_RULE": "",
+						"ACTION_NAME": "",
+						"ACTION_COST": null,
+						"ACTION_DESCRIPTION": ""
+					},
+					"ADDITIONAL_DESCRIPTION": "",
+					"DESIGNERS_NOTE": ""
+				},
+				"HEADHUNTER": {
+					"GROUP": "",
+					"NAME": "",
+					"DESCRIPTION": "",
+					"CONDITIONS": {
+						"CONDITION_FIRST": "",
+						"CONDITION_SECOND": ""
+					},
+					"ACTION": {
+						"ACTION_AVAILABILITY": false,
+						"ACTION_RULE": "",
+						"ACTION_NAME": "",
+						"ACTION_COST": null,
+						"ACTION_DESCRIPTION": ""
+					},
+					"ADDITIONAL_DESCRIPTION": "",
+					"DESIGNERS_NOTE": ""
+				},
+				"ASSASSINATE TARGET": {
+					"GROUP": "",
+					"NAME": "",
+					"DESCRIPTION": "",
+					"CONDITIONS": {
+						"CONDITION_FIRST": "",
+						"CONDITION_SECOND": ""
+					},
+					"ACTION": {
+						"ACTION_AVAILABILITY": false,
+						"ACTION_RULE": "",
+						"ACTION_NAME": "",
+						"ACTION_COST": null,
+						"ACTION_DESCRIPTION": ""
+					},
+					"ADDITIONAL_DESCRIPTION": "",
+					"DESIGNERS_NOTE": ""
+				},
+				"ELIMINATE GUARDS": {
+					"GROUP": "",
+					"NAME": "",
+					"DESCRIPTION": "",
+					"CONDITIONS": {
+						"CONDITION_FIRST": "",
+						"CONDITION_SECOND": ""
+					},
+					"ACTION": {
+						"ACTION_AVAILABILITY": false,
+						"ACTION_RULE": "",
+						"ACTION_NAME": "",
+						"ACTION_COST": null,
+						"ACTION_DESCRIPTION": ""
+					},
+					"ADDITIONAL_DESCRIPTION": "",
+					"DESIGNERS_NOTE": ""
+				},
+				"ROB AND RANSACK": {
+					"GROUP": "",
+					"NAME": "",
+					"DESCRIPTION": "",
+					"CONDITIONS": {
+						"CONDITION_FIRST": "",
+						"CONDITION_SECOND": ""
+					},
+					"ACTION": {
+						"ACTION_AVAILABILITY": false,
+						"ACTION_RULE": "",
+						"ACTION_NAME": "",
+						"ACTION_COST": null,
+						"ACTION_DESCRIPTION": ""
+					},
+					"ADDITIONAL_DESCRIPTION": "",
+					"DESIGNERS_NOTE": ""
+				},
+				"ROUT": {
+					"GROUP": "",
+					"NAME": "",
+					"DESCRIPTION": "",
+					"CONDITIONS": {
+						"CONDITION_FIRST": "",
+						"CONDITION_SECOND": ""
+					},
+					"ACTION": {
+						"ACTION_AVAILABILITY": false,
+						"ACTION_RULE": "",
+						"ACTION_NAME": "",
+						"ACTION_COST": null,
+						"ACTION_DESCRIPTION": ""
+					},
+					"ADDITIONAL_DESCRIPTION": "",
+					"DESIGNERS_NOTE": ""
+				}
+			}
+		},
+		"FACTION_TAC_OPS": {}
+	}
+]
