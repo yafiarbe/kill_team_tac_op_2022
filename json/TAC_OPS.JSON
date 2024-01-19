@@ -126,7 +126,7 @@
 					"DESIGNERS_NOTE": ""
 				},
 				"SEIZE_DEFENCES": {
-					"GROUP": "",
+					"GROUP": "INFILTRATION",
 					"NAME": "",
 					"DESCRIPTION": "",
 					"CONDITIONS": {
@@ -144,7 +144,7 @@
 					"DESIGNERS_NOTE": ""
 				},
 				"STALK_TARGET": {
-					"GROUP": "",
+					"GROUP": "INFILTRATION",
 					"NAME": "",
 					"DESCRIPTION": "",
 					"CONDITIONS": {
@@ -162,7 +162,7 @@
 					"DESIGNERS_NOTE": ""
 				},
 				"INSTALL_DEVICE": {
-					"GROUP": "",
+					"GROUP": "INFILTRATION",
 					"NAME": "",
 					"DESCRIPTION": "",
 					"CONDITIONS": {
@@ -180,7 +180,7 @@
 					"DESIGNERS_NOTE": ""
 				},
 				"SUBVERSIVE_CONTROL": {
-					"GROUP": "",
+					"GROUP": "INFILTRATION",
 					"NAME": "",
 					"DESCRIPTION": "",
 					"CONDITIONS": {
@@ -198,7 +198,7 @@
 					"DESIGNERS_NOTE": ""
 				},
 				"IMPLANT": {
-					"GROUP": "",
+					"GROUP": "INFILTRATION",
 					"NAME": "",
 					"DESCRIPTION": "",
 					"CONDITIONS": {
