@@ -93,7 +93,7 @@
 					"NAME": "SECURE VANTAGE",
 					"DESCRIPTION": "Вы можете раскрыть эту <b>тактическую операцию</b> (<a>Tac Op</a>) на этапе <b>раскрытия цели</b> (<a>Target Reveal</a>) любого <b>поворотного момента</b> (<a>Turning Point</a>) после первого.",
 					"CONDITIONS": {
-						"CONDITION_FIRST": "В конце любого <b>поворотного момента</b> (<a>Turning Point</a>), если вы контролируете <b>точку обзора</b> (<a>Vantage Point</a>), которая находится более чем в 3 дюймах от вашей <b>зоны высадки</b> (<a>Drop Zone</a>), вы получаете 1 VP.",
+						"CONDITION_FIRST": "В конце любого <b>поворотного момента</b> (<a>Turning Point</a>), если вы контролируете <b>точку обзора</b> (<a>Vantage Point</a>), которая находится более чем в --3-- от вашей <b>зоны высадки</b> (<a>Drop Zone</a>), вы получаете 1 VP.",
 						"CONDITION_SECOND": "Если вы достигнете первого условия с другой <b>точкой обзора</b> (<a>Vantage Point</a>) в конце любого последующего <b>поворотного момента</b> (<a>Turning Point</a>), вы получите 1 VP."
 					},
 					"ACTION": {
@@ -218,7 +218,7 @@
 			},
 			"SECURITY": {
 				"SEIZE_GROUND": {
-					"GROUP": "",
+					"GROUP": "SECURITY",
 					"NAME": "",
 					"DESCRIPTION": "",
 					"CONDITIONS": {
@@ -236,7 +236,7 @@
 					"DESIGNERS_NOTE": ""
 				},
 				"HOLD THEM BACK": {
-					"GROUP": "",
+					"GROUP": "SECURITY",
 					"NAME": "",
 					"DESCRIPTION": "",
 					"CONDITIONS": {
@@ -254,7 +254,7 @@
 					"DESIGNERS_NOTE": ""
 				},
 				"CENTRAL CONTROL": {
-					"GROUP": "",
+					"GROUP": "SECURITY",
 					"NAME": "",
 					"DESCRIPTION": "",
 					"CONDITIONS": {
@@ -272,7 +272,7 @@
 					"DESIGNERS_NOTE": ""
 				},
 				"PROTECT ASSETS": {
-					"GROUP": "",
+					"GROUP": "SECURITY",
 					"NAME": "",
 					"DESCRIPTION": "",
 					"CONDITIONS": {
@@ -290,7 +290,7 @@
 					"DESIGNERS_NOTE": ""
 				},
 				"SECURE CENTRE LINE": {
-					"GROUP": "",
+					"GROUP": "SECURITY",
 					"NAME": "",
 					"DESCRIPTION": "",
 					"CONDITIONS": {
@@ -308,7 +308,7 @@
 					"DESIGNERS_NOTE": ""
 				},
 				"ESCORT OPERATIVE": {
-					"GROUP": "",
+					"GROUP": "SECURITY",
 					"NAME": "",
 					"DESCRIPTION": "",
 					"CONDITIONS": {
@@ -328,7 +328,7 @@
 			},
 			"SEEK_AND_DESTROY": {
 				"EXECUTIONER": {
-					"GROUP": "",
+					"GROUP": "SEEK_AND_DESTROY",
 					"NAME": "",
 					"DESCRIPTION": "",
 					"CONDITIONS": {
@@ -346,7 +346,7 @@
 					"DESIGNERS_NOTE": ""
 				},
 				"HEADHUNTER": {
-					"GROUP": "",
+					"GROUP": "SEEK_AND_DESTROY",
 					"NAME": "",
 					"DESCRIPTION": "",
 					"CONDITIONS": {
@@ -364,7 +364,7 @@
 					"DESIGNERS_NOTE": ""
 				},
 				"ASSASSINATE TARGET": {
-					"GROUP": "",
+					"GROUP": "SEEK_AND_DESTROY",
 					"NAME": "",
 					"DESCRIPTION": "",
 					"CONDITIONS": {
@@ -382,7 +382,7 @@
 					"DESIGNERS_NOTE": ""
 				},
 				"ELIMINATE GUARDS": {
-					"GROUP": "",
+					"GROUP": "SEEK_AND_DESTROY",
 					"NAME": "",
 					"DESCRIPTION": "",
 					"CONDITIONS": {
@@ -400,7 +400,7 @@
 					"DESIGNERS_NOTE": ""
 				},
 				"ROB AND RANSACK": {
-					"GROUP": "",
+					"GROUP": "SEEK_AND_DESTROY",
 					"NAME": "",
 					"DESCRIPTION": "",
 					"CONDITIONS": {
@@ -418,7 +418,7 @@
 					"DESIGNERS_NOTE": ""
 				},
 				"ROUT": {
-					"GROUP": "",
+					"GROUP": "SEEK_AND_DESTROY",
 					"NAME": "",
 					"DESCRIPTION": "",
 					"CONDITIONS": {
