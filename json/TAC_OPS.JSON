@@ -110,9 +110,7 @@
 				"GATHER_SURVEILLANCE": {
 					"GROUP": "INFILTRATION",
 					"NAME": "",
-					"DESCRIPTION": "You can reveal this Tac Op in the Target Reveal step of any Turning Point. Once you do so, at the end of each Target Reveal step, select one friendly operative to gather surveillance for that Turning Point.
-At the end of any Turning Point, if the friendly operative you selected to gather surveillance for that Turning Point has a Conceal order, is wholly within your opponent’s territory and is more than  from enemy operatives, you score 1VP.
-If you achieve the first condition at the end of any subsequent Turning Points, you score 1VP.",
+					"DESCRIPTION": "You can reveal this Tac Op in the Target Reveal step of any Turning Point. Once you do so, at the end of each Target Reveal step, select one friendly operative to gather surveillance for that Turning Point.At the end of any Turning Point, if the friendly operative you selected to gather surveillance for that Turning Point has a Conceal order, is wholly within your opponent’s territory and is more than  from enemy operatives, you score 1VP.If you achieve the first condition at the end of any subsequent Turning Points, you score 1VP.",
 					"CONDITIONS": {
 						"CONDITION_FIRST": "",
 						"CONDITION_SECOND": ""
