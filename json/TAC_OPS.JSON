@@ -108,7 +108,7 @@
 			},
 			"INFILTRATION": {
 				"GATHER_SURVEILLANCE": {
-					"GROUP": "",
+					"GROUP": "INFILTRATION",
 					"NAME": "",
 					"DESCRIPTION": "",
 					"CONDITIONS": {
