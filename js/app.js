@@ -197,8 +197,9 @@ function linksCreator(el, json) {
                 console.log('Ссылка на', element.textContent, "добавлена.");
 
 
-                if (element.textContent in dataUrls) {
-                    let newUrl = dataUrls[element.textContent];
+                if (element.textContent.toUpperCase() in dataUrls) {
+                    let newUrl = dataUrls[element.textContent.toUpperCase()];
+                    console.log('dataUrls[element.textContent]', dataUrls[element.textContent]);
                     element.href = newUrl;
                 }
             }
