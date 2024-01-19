@@ -16,7 +16,8 @@ function createOpsCards() {
     var data;
 
     // используем fetch для получения JSON-данных с API
-    const baseCritOpsUrl = "https://65a587e452f07a8b4a3f4c7a.mockapi.io/CRITICAL_OPERATIONS_2022"
+    // const baseCritOpsUrl = "https://65a587e452f07a8b4a3f4c7a.mockapi.io/CRITICAL_OPERATIONS_2022"
+    const baseCritOpsUrl = "json/TAC_OPS.JSON"
     fetch(baseCritOpsUrl)
         .then((response) => response.json()) // извлекаем данные из тела ответа
         .then((json) => {
